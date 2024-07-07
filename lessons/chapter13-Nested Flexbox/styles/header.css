@@ -37,7 +37,8 @@
   border-style: solid;
   border-color:rgb(190, 190, 190);
   border-radius: 2px;
-  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05)
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+  width: 0;
 }
 .search-bar::placeholder{
   font-family: Roboto, Arial;
@@ -75,7 +76,49 @@ voice-search-icon{
 }
 
 .right-section {
-  background-color: lightblue;
-  width: 200px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-right: 20px;
+  flex-shrink:0;
   
 }
+
+
+.upload-icon {
+  height: 24px;
+  
+
+ 
+}
+
+.youtube-apps-icon{
+  height: 24px;
+  
+
+}
+.notifications-icon{
+  height: 24px;
+  
+}
+
+.current-user-picture{
+  height: 32px;
+  border-radius: 16px;
+  
+
+}
+/*
+flex-shink: 0; means don't shrink
+is used in left-section
+
+width: 0; = shrink
+is used in searh-bar
+*/
+
+
+
+
+
+
