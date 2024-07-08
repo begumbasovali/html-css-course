@@ -1,0 +1,204 @@
+.header {
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(230,230,230)
+
+
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+
+}
+.hamburger-menu{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.youtube-logo{
+  height: 20px;
+}
+.middle-section{
+  
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search-bar{
+  flex: 1;
+  height: 37px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+  width: 0;
+}
+.search-bar::placeholder{
+  
+  font-size: 15px;
+
+}
+.search-button {
+  height: 41px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color:rgb(190, 190, 190);
+  margin-left: -2px;
+  margin-right: 10px;
+  
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container,
+.current-user-picture-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip{
+  position: absolute;
+  background-color: rgb(98, 98, 98);
+  color:white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  border-radius: 2px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 0.9;
+}
+.search-icon{
+  height: 25px;
+  
+  
+}
+.voice-search-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgb(245, 245, 245);
+  
+}
+
+voice-search-icon{
+  height: 24px;
+  margin-top: 4px;
+  
+}
+
+.right-section {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-right: 28px;
+  flex-shrink:0;
+  
+}
+
+
+.upload-icon {
+  height: 24px;
+  
+
+ 
+}
+
+.youtube-apps-icon{
+  height: 24px;
+  
+
+}
+.notifications-icon{
+  height: 24px;
+  
+}
+.notifications-icon-container{
+  position: relative;
+  
+}
+.notifications-count{
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background-color: rgb(202, 0, 0);
+  color: white;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+
+}
+
+.current-user-picture{
+  height: 32px;
+  border-radius: 16px;
+  
+
+}
+/*
+flex-shink: 0; means don't shrink
+is used in left-section
+
+width: 0; = shrink
+is used in searh-bar
+*/
+
+/* instead of 
+border-width: 1px;
+border-style: solid;
+border-color:rgb(190, 190, 190);
+
+use border: 1px solid rgb(190,190,190)
+*/
+
+
+
+
+
+
